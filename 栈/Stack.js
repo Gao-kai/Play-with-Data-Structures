@@ -98,5 +98,5 @@ broswer.back();
 broswer.back();
 broswer.forward();
 broswer.inputUrl('taobao.com');
-broswer.forward(); // 前进按钮不可点击
+// broswer.forward(); // 前进按钮不可点击
 

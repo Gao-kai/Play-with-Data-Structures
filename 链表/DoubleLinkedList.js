@@ -163,10 +163,10 @@ class DoubleLinkedList {
 		if (index < 0 || index >= this.size) {
 			throw new Error('index边界出错')
 		}
-
+		let curr;
 		// 从尾部开始查找
 		if (index > (this.size / 2)) {
-			let curr = this.tail;
+			curr = this.tail;
 			let i = this.size - 1;
 			while (i > index) {
 				curr = curr.prev;
@@ -174,7 +174,7 @@ class DoubleLinkedList {
 			}
 		} else {
 			// 从头部开始查找
-			let curr = this.head;
+			curr = this.head;
 			let i = 0;
 			while (i < index) {
 				curr = curr.next;
@@ -208,5 +208,7 @@ dp.add(0, 100);
 dp.add(1, 200);
 dp.add(2, 300);
 dp.add(3, 400);
-console.log(dp);
-dp.toString();
+// console.log(dp);
+// dp.toString();
+
+export default DoubleLinkedList;
